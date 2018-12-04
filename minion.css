@@ -1,20 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis:600,800');
 
-#home span{
-	font-family: exo 2;
-	font-size: 350%;
-	color: rgb(30,106,159)
+#home h4{
+	font-family:sans-serif;
+	font-size: 300%;
+	color: rgb(30,106,159);
+	padding-top: 150px;
+	padding-left: 35px;
 
 }
-#home h4{
+#home p{
       
 	font-family: Roboto;
 	font-size: 200%;
+	text-align: justify;
+	padding-left: 25px;
 }
 .navbar{
 	background-color:rgb(30,106,159);
-	padding: 2px;
-
+	padding: 1.5px;
 }
 #myNav li a{
 
@@ -62,8 +65,35 @@ footer{
 
 }
 
-}
+
 .fa:hover{
 	text-decoration:none;
 	color: #D5D5D5;
+}
+@media (max-width: 768px)
+{
+	#home h4{
+		padding-top: 10px;
+		padding-left: 15px;
+	}
+
+#home p{
+	font-size:25px;
+	padding-left: 15px;
+	padding-top: -10px;
+	padding-left: 9px;
+}
+	
+#home span{
+	font-size: 250%;
+}
+#footer-img{
+	padding-top: 20px;
+}
+
+footer{
+	font-size: 100%;
+}
+
+
 }

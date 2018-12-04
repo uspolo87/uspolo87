@@ -42,24 +42,27 @@
      </div>
      
    </nav> 
-   <br>
-   <br>
-
  
     <div id="home">
      <div class="row">
-       <div class="col-lg-5" style="padding-top: 120px; padding-left: 55px;">
-         <span>Minions</span>
+       <div class="col-lg-5">
+       	<section tyle="padding-top: 100px; padding-left: 15px; text-align: justify; stroke-linecap: round; word-spacing: 0.5px;">
+         <h4>Minions</h4>
          <br>
-         <h4>The Minions are small, yellow henchmen shaped like pill capsules. They are depicted as being roughly one-third to one-half the height of normal humans. They have common English-language names, such as Kevin, Stuart and Bob</h4>
-         <a href="#" class="text-info">View more..</a>
+         <p>The Minions are small, yellow henchmen shaped like pill capsules. They are depicted as being roughly one-third to one-half the height of normal humans. They have common English-language names, such as Kevin, Stuart and Bob..</p>
+         <a href="#" class="text-info " style="float: right;">View more..</a>
+     </section>
          </div>
        <div class="col-lg-7">
+       	<section class="showcase-right">
          <img src="img/home1.png" class="img-responsive" style="width: 100%; height: auto;">
+     </section>
        </div>
      </div>
   </div>
 
+<br>
+<br>
 <br>
 <br>
 
@@ -78,7 +81,7 @@
 
   <div class="container-fluid">
 <div style="padding-top: 25px;">
-  <h1 class="text-center">About Minions</h1>
+  <h3 class="text-center well well-sm text-primary">About Minions</h3>
 
   <div id="about" class="row" style="padding-top: 20px;">
     <div class="col-lg-7">
@@ -158,7 +161,7 @@
 </div>
 
 <div id="movies" style="padding-top: 55px;">
-  <h1 class="text-center"> Minion's-movies</h1>
+  <h1 class="text-center text-center well well-sm text-primary"> Minion's-movies</h1>
 
   <div class="row" style="padding-top: 30px;">
    
@@ -222,7 +225,7 @@
 
 
 <div id="characters"><!--characters section starts here-->
-  <h1 class="text-center" style="padding: 50px;"> Movie Characters</h1>
+  <h1 class="text-center text-center well well-sm text-primary" style="padding: 50px;"> Movie Characters</h1>
   <div class="row">
     <div class="col-lg-3">
       <div class="panel panel-primary">
@@ -328,7 +331,7 @@
 </div><!-- characters section ends here-->
 <div class="conainer-fluid">
 <div id="gallery" style="background-color: rgb(30,106,159);" >
-  <h1 class="text-center" style="padding: 35px;"> Minions Gallery</h1>
+  <h1 class="text-center text-center well well-sm text-primary" style="padding: 35px;"> Minions Gallery</h1>
   <div class="row">
     <div class="col-lg-3">
       <img src="img/m4.jpg" alt="minions gallery" class="img-responsive img-thumbnail bg-primary ">
@@ -388,11 +391,29 @@
   </div>
 
     <div class="col-sm-4">
-      <img src="img/minions-back.jpg" class="icon img-circle" style="width: 100%;" class="img-responsive">
+      <img src="img/minions-back.jpg" id="footer-img" class="icon img-circle" style="width: 100%;" class="img-responsive">
     </div>
   </div>
   
 </footer>
 </div>
+
+ <script>
+    $(function() {
+      // Smooth Scrolling
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+    </script>
 </body>
 </html>
